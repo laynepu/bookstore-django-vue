@@ -1,0 +1,52 @@
+services:
+  frontend:
+    build:
+      context: ./client
+    container_name: bookstore-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./client:/app
+      - /app/node_modules # Mount a named volume to avoid it being overwritten by a local empty directory.
+    depends_on:
+      - backend
+    env_file:
+      - ./env/frontend.dev.env
+
+  backend:
+    build:
+      context: ./server
+    container_name: bookstore-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./server/backend:/app/backend
+      - ./server/manage.py:/app/manage.py
+      - ./server/requirements.txt:/app/requirements.txt
+      - ./server/entrypoint.sh:/app/entrypoint.sh
+      - config_data:/app/config
+    env_file:
+      - ./env/backend.dev.env
+    depends_on:
+      db:
+        condition: service_healthy  # Ensures Django starts only after the database is fully ready
+
+  db:
+    image: postgres:14
+    container_name: bookstore-db
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:  # Add a healthcheck to ensure PostgreSQL starts successfully.
+      test: ["CMD-SHELL", "pg_isready -U bookstore_user -d bookstore_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    env_file:
+      - ./env/database.dev.env
+
+volumes:
+  db_data:
+  config_data:

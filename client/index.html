@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LayneBookstore - The best online bookstore, explore various books">
+  <meta name="keywords" content="bookstore, online bookstore, LayneBookstore, buy books, read">
+  <meta name="author" content="Layne Pu">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <title>LayneBookstore</title>
+</head>
+<body>
+  <noscript>
+    <strong>We are sorry, but <span id="app-title">%VITE_APP_TITLE%</span> cannot function properly without JavaScript enabled.</strong>
+  </noscript>
+  
+  <div id="app"></div> <!-- Vue.js will mount here -->
+
+  <script type="module">
+    // Use the environment variable VITE_APP_TITLE to dynamically set the page title
+    document.title = import.meta.env.VITE_APP_TITLE || "LayneBookstore";
+  </script>
+
+  <!-- Load Vue entry script -->
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

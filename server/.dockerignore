@@ -1,0 +1,20 @@
+# Do not copy Git or editor configuration files into the container
+.git
+.vscode
+.DS_Store
+
+# Do not copy local node_modules into the container
+node_modules
+
+# Exclude unnecessary log files
+*.log
+
+# Exclude sensitive files
+.env
+.env.example
+
+# Exclude virtual environment
+.venv
+
+# Exclude .gitignore
+.gitignore
