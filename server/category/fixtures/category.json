@@ -1,0 +1,10 @@
+[
+    {"model": "category.category", "pk": 1001, "fields": {"name": "Adventure"}},
+    {"model": "category.category", "pk": 1002, "fields": {"name": "Science Fiction"}},
+    {"model": "category.category", "pk": 1003, "fields": {"name": "Crime"}},
+    {"model": "category.category", "pk": 1004, "fields": {"name": "Horror"}},
+    {"model": "category.category", "pk": 1005, "fields": {"name": "Romance"}},
+    {"model": "category.category", "pk": 1006, "fields": {"name": "Fantasy"}},
+    {"model": "category.category", "pk": 1007, "fields": {"name": "Drama"}},
+    {"model": "category.category", "pk": 1008, "fields": {"name": "Mystery"}}
+]

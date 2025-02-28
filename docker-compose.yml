@@ -24,6 +24,8 @@ services:
       - ./server/manage.py:/app/manage.py
       - ./server/requirements.txt:/app/requirements.txt
       - ./server/entrypoint.sh:/app/entrypoint.sh
+      - ./server/book:/app/book
+      - ./server/category:/app/category
       - config_data:/app/config
     env_file:
       - ./env/backend.dev.env
@@ -34,7 +36,7 @@ services:
   db:
     image: postgres:14
     container_name: bookstore-db
-    restart: always
+    restart: on-failure
     ports:
       - "5432:5432"
     volumes:

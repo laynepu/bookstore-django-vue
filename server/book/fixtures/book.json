@@ -1,0 +1,43 @@
+[
+	{"model": "book.book", "pk": 1, "fields": {"title": "The Three Musketeers", "author": "Alexandre Dumas", "price": 699, "is_public": true, "category": 1001, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 2, "fields": {"title": "Treasure Island", "author": "Robert Louis Stevenson", "price": 495, "is_public": false, "category": 1001, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 3, "fields": {"title": "Journey to the Center of the Earth", "author": "Jules Verne", "price": 499, "is_public": false, "category": 1001, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 4, "fields": {"title": "The Count of Monte Cristo", "author": "Alexandre Dumas", "price": 1600, "is_public": true, "category": 1001, "description": "", "rating": 0, "is_featured": false}},
+
+	{"model": "book.book", "pk": 5, "fields": {"title": "The Hunger Games", "author": "Suzanne Collins", "price": 1299, "is_public": true, "category": 1002, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 6, "fields": {"title": "Gideon the Ninth", "author": "Tamsyn Muir", "price": 1799, "is_public": false, "category": 1002, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 7, "fields": {"title": "The Space Between Worlds", "author": "Micaiah Johnson", "price": 1699, "is_public": false, "category": 1002, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 8, "fields": {"title": "Every Heart a Doorway", "author": "Seanan McGuire", "price": 1799, "is_public": false, "category": 1002, "description": "", "rating": 0, "is_featured": false}},
+
+	{"model": "book.book", "pk": 9, "fields": {"title": "The Rising Tide", "author": "Ann Cleeves", "price": 1999, "is_public": true, "category": 1003, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 10, "fields": {"title": "Dirt Town", "author": "Hayley Scrivenor", "price": 1499, "is_public": false, "category": 1003, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 11, "fields": {"title": "The Sleeping and the Dead", "author": "Ann Cleeves", "price": 899, "is_public": true, "category": 1003, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 12, "fields": {"title": "The Murders at Fleat House", "author": "Lucinda Riley", "price": 1999, "is_public": false, "category": 1003, "description": "", "rating": 0, "is_featured": false}},
+
+	{"model": "book.book", "pk": 13, "fields": {"title": "RING", "author": "Koji Suzuki", "price": 1699, "is_public": true, "category": 1004, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 14, "fields": {"title": "THE SHINNING", "author": "Stephen King", "price": 1899, "is_public": true, "category": 1004, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 15, "fields": {"title": "THE MIST", "author": "Stephen King", "price": 1599, "is_public": false, "category": 1004, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 16, "fields": {"title": "BATTLE ROYALE", "author": "Koshun Takimi", "price": 1799, "is_public": false, "category": 1004, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 17, "fields": {"title": "IT", "author": "Stephen King", "price": 1999, "is_public": false, "category": 1004, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 18, "fields": {"title": "DETENTION: THE NIGHTMARE RETURNS", "author": "Ling Jing", "price": 1599, "is_public": true, "category": 1004, "description": "", "rating": 0, "is_featured": false}},
+
+	{"model": "book.book", "pk": 19, "fields": {"title": "Vision In White", "author": "Nora Roberts", "price": 799, "is_public": false, "category": 1005, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 20, "fields": {"title": "The Hating Game", "author": "Sally Thorne", "price": 1599, "is_public": false, "category": 1005, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 21, "fields": {"title": "Violeta", "author": "Isabel Allende", "price": 2799, "is_public": false, "category": 1005, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 22, "fields": {"title": "I Kissed Shara Wheeler", "author": "Casey McQuiston", "price": 1999, "is_public": true, "category": 1005, "description": "", "rating": 0, "is_featured": false}},
+
+	{"model": "book.book", "pk": 23, "fields": {"title": "The Lies of Locke Lamora", "author": "Scott Lynch", "price": 899, "is_public": false, "category": 1006, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 24, "fields": {"title": "Gardens of the Moon", "author": "Steven Erikson", "price": 999, "is_public": false, "category": 1006, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 25, "fields": {"title": "The Lion, the Witch and the Wardrobe", "author": "C.S. Lewis", "price": 899, "is_public": false, "category": 1006, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 26, "fields": {"title": "Percy Jackson & the Olympians: The Lightning Thief", "author": "Rick Riordan", "price": 799, "is_public": true, "category": 1006, "description": "", "rating": 0, "is_featured": false}},
+
+	{"model": "book.book", "pk": 27, "fields": {"title": "The Layover", "author": "Lacie Waldon", "price": 1199, "is_public": true, "category": 1007, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 28, "fields": {"title": "Shadow Storm (A Shadow Riders Novel)", "author": "Christine Feehan", "price": 899, "is_public": false, "category": 1007, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 29, "fields": {"title": "The Road Trip", "author": "Beth O'Leary", "price": 899, "is_public": true, "category": 1007, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 30, "fields": {"title": "Lizzie & Dante: A Novel", "author": "Mary Bly", "price": 1699, "is_public": false, "category": 1007, "description": "", "rating": 0, "is_featured": false}},
+
+	{"model": "book.book", "pk": 31, "fields": {"title": "Good Rich People", "author": "Eliza Jane Brazier", "price": 2699, "is_public": false, "category": 1008, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 32, "fields": {"title": "Verity", "author": "Colleen Hoover", "price": 1699, "is_public": true, "category": 1008, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 33, "fields": {"title": "The Silent Patient", "author": "Alex Michaelides", "price": 1799, "is_public": false, "category": 1008, "description": "", "rating": 0, "is_featured": false}},
+	{"model": "book.book", "pk": 34, "fields": {"title": "The Maid: A Novel", "author": "Nita Prose", "price": 2699, "is_public": true, "category": 1008, "description": "", "rating": 0, "is_featured": false}}
+]
