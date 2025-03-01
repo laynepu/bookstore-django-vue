@@ -1,10 +1,7 @@
 <template>
   <li class="book-box">
     <div class="book-img" :class="book.isPublic ? 'read-now-available' : null">
-      <img
-        :src="require('@/assets/images/books/' + getBookImageUrl(book))"
-        :alt="book.title"
-      />
+      <img :src="'/images/books/' + getBookImageUrl(book)" :alt="book.title" />
       <router-link to="#" v-if="book.isPublic">Read now</router-link>
     </div>
     <div class="book-info">
@@ -26,7 +23,6 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from "vue";
 import { BookItem } from "@/types";
 import { useCartStore } from "@/stores/CartStore";
 const cartStore = useCartStore();

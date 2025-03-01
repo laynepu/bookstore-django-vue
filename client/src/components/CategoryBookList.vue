@@ -17,9 +17,9 @@ const bookStore = useBookStore();
 <template>
   <section id="category-book-list">
     <ul id="book-boxes">
-      <template v-for="book in bookStore.bookList" :key="book.bookId">
+      <li v-for="book in bookStore.bookList" :key="book.bookId">
         <category-book-list-item :book="book"></category-book-list-item>
-      </template>
+      </li>
     </ul>
   </section>
 </template>

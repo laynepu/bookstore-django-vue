@@ -1,6 +1,6 @@
 <template>
   <section id="hero-section">
-    <img id="hero-img" src="@/assets/images/site/hero-img.png" alt="hero-img" />
+    <img id="hero-img" src="/public/images/site/hero-img.png" alt="hero-img" />
 
     <!--    option 1-->
     <!--    <router-link to="../category/horror" id="call-to-action-btn" class="button"-->

@@ -60,7 +60,7 @@ header input[type="text"] {
 
 header input[type="submit"] {
   opacity: 60%;
-  background: url("@/assets/images/site/magnifying-glass-solid.svg") no-repeat
+  background: url("/public/images/site/magnifying-glass-solid.svg") no-repeat
     center;
   background-origin: content-box;
   background-color: white;
@@ -113,7 +113,7 @@ header a.button.sign-in-link:hover {
     <section id="bookstore-logo-section">
       <router-link to="/" id="header-logo-link">
         <img
-          src="@/assets/images/site/pepe-store-logo.gif"
+          src="/public/images/site/pepe-store-logo.gif"
           alt="Pepe's Bookstore Logo"
         />
         <!-- @ is a path alias for the src directory -->

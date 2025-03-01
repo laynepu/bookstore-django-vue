@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps, Ref } from "vue";
+import { Ref } from "vue";
 import { Validation } from "@vuelidate/core";
 
 const props = defineProps<{
