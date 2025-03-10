@@ -23,16 +23,7 @@ export const useBookStore = defineStore("BookStore", {
       const url =
         apiUrl + "/books/by-category-name/" + selectedCategoryName;
 
-      const rawBooks = await fetch(url).then((response) => response.json());
-
-      // Convert snake_case (json) into camelCase (BookItem)
-      this.bookList = rawBooks.map((book: any) => ({
-        bookId: book.id,       // `id` -> `bookId`
-        title: book.title,
-        author: book.author,
-        price: book.price,
-        isPublic: book.is_public // `is_public` -> `isPublic`
-      }));
+      this.bookList = await fetch(url).then((response) => response.json());
     },
   },
   // getters

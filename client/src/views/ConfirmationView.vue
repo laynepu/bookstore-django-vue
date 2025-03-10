@@ -151,7 +151,7 @@ h3 {
       <ul>
         <li>
           <span class="label">Name</span
-          ><span class="value">{{ orderDetails.customer.customerName }}</span>
+          ><span class="value">{{ orderDetails.customer.name }}</span>
         </li>
         <li>
           <span class="label">Address</span
@@ -168,10 +168,10 @@ h3 {
         <li>
           <span class="label">Credit Card</span
           ><span class="value"
-            >**** **** ****
-            {{ orderDetails.customer.ccNumber.substring(12) }}
-            (exp. {{ new Date(orderDetails.customer.ccExpDate).getMonth() }}/{{
-              new Date(orderDetails.customer.ccExpDate).getFullYear()
+            >
+            {{ orderDetails.customer.maskedCCNumber }}
+            (exp. {{ orderDetails.customer.ccExpDate.substring(5, 7) }}/{{
+              orderDetails.customer.ccExpDate.substring(0, 4)
             }})</span
           >
         </li>

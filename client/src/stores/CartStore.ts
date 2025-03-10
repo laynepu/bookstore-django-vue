@@ -46,7 +46,7 @@ export const useCartStore = defineStore("CartStore", {
       const order = { cart: this.cart, customerForm: customerForm };
       console.log(JSON.stringify(order));
 
-      const url = apiUrl + "/orders";
+      const url = apiUrl + "/orders/";
       const orderDetails: OrderDetails = await fetch(url, {
         mode: "cors",
         cache: "no-cache",

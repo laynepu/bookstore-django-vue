@@ -37,12 +37,11 @@ export interface LineItem {
 }
 
 export interface Customer {
-  customerName: string;
+  name: string;
   address: string;
   phone: string;
   email: string;
-  ccNumber: string;
-  ccExpDate: number;
+  maskedCCNumber: string;
 }
 
 export interface OrderDetails {

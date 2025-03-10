@@ -63,6 +63,9 @@ INSTALLED_APPS = [
     'corsheaders',
     'category',
     'book',
+    'cart',
+    'order',
+    'customer',
 ]
 
 MIDDLEWARE = [
@@ -161,3 +164,5 @@ CORS_ALLOWED_ORIGINS = [
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'backend.exceptions.custom_exception_handler',
 }
+
+APPEND_SLASH = True

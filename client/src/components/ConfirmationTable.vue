@@ -106,14 +106,10 @@ img {
       >
         <li>
           <div class="book-image">
-            <img
-              :src="
-                require('@/assets/images/books/' +
-                  getBookImageUrl(orderDetails.books[index]))
-              "
+            <img 
+              v-if="orderDetails.books && orderDetails.books[index]"
+              :src="'/images/books/' + getBookImageUrl(orderDetails.books[index])" 
               :alt="orderDetails.books[index].title"
-              width="100px"
-              height="auto"
             />
           </div>
           <div class="book-title">

@@ -26,6 +26,9 @@ services:
       - ./server/entrypoint.sh:/app/entrypoint.sh
       - ./server/book:/app/book
       - ./server/category:/app/category
+      - ./server/cart:/app/cart
+      - ./server/customer:/app/customer
+      - ./server/order:/app/order
       - config_data:/app/config
     env_file:
       - ./env/backend.dev.env

@@ -185,7 +185,7 @@ img {
             <div class="cart-book-image">
               <img
                 :src="
-                  require('@/assets/images/books/' + getBookImageUrl(item.book))
+                  '/images/books/' + getBookImageUrl(item.book)
                 "
                 :alt="item.book.title"
                 width="100px"
