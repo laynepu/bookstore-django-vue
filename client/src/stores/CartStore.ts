@@ -21,7 +21,6 @@ export const useCartStore = defineStore("CartStore", {
   },
   getters: {
     count(): number {
-      console.log(this.cart.numberOfItems);
       return this.cart.numberOfItems;
     },
   },

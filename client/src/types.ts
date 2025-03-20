@@ -42,6 +42,7 @@ export interface Customer {
   phone: string;
   email: string;
   maskedCCNumber: string;
+  ccExpDate: string;
 }
 
 export interface OrderDetails {
